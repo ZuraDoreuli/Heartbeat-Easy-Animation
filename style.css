@@ -1,0 +1,41 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+	padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+div {
+  text-align: center;
+  border: 5px solid #000;
+  border-radius: 10px;
+  padding: 50px;
+}
+span {
+  display: inline-block;
+  font-size: 110px;
+  margin-bottom: 70px;
+  animation: heartbeat 0.7s linear infinite;
+}
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+h1 {
+  font-size: 60px;
+  letter-spacing: 7px;
+  color: #d6b705;
+}
